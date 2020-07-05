@@ -1,0 +1,34 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <!--<mat-card-title>MAP</mat-card-title>-->
+  </mat-card-header>
+  <img mat-card-image src="https://www.indiawaterportal.org/sites/indiawaterportal.org/files/aquifer_systems.jpg" alt="Principle Aquifiers">
+</mat-card>
+
+<mat-card class="example-card-2">
+  <mat-card-header>
+    <mat-card-title>ABOUT</mat-card-title>
+  </mat-card-header>
+  <mat-card-content id="Content">
+    <p><strong> Central Ground Water Authority</strong> has been constituted under Section 3 (3) of the Environment (Protection) Act, 1986 to regulate and control development and management of ground water resources in the country.</p>
+    Regulatory measures:<p id="intent"> 1. The Central Ground Water Authority is regulating withdrawal of ground water by industries/ projects in 802 Over-exploited and 169 Critical Assessment Units.</p>
+    <p id="intent">2. CGWA has notified 162 critical/ overexploited areas in parts of NCT Delhi, Haryana, Punjab, Andhra Pradesh, Rajasthan, MP, Gujarat, West Bengal, Uttar Pradesh, Karnataka, Tamil Nadu, UT of Puducherry and UT of Diu for control and regulation of development of ground water resources. </p>
+    <p id="intent">3. Construction of new ground water structures is prohibited in the notified areas. Permission of drilling tubewells is being granted only to the Govt. agencies responsible for drinking water supply.</p>
+  </mat-card-content>
+</mat-card>
+
+<br>
+<h3> STATE-WISE GROUNDWATER CONSUMPTION </h3>
+    <ngx-charts-bar-vertical class="graph1"
+      [view]="view" 
+      [scheme]="colorScheme" 
+      [results]="reuse" 
+      [gradient]="gradient" 
+      [xAxis]="showXAxis"
+      [yAxis]="showYAxis" 
+      [showXAxisLabel]="showXAxisLabel" 
+      [showYAxisLabel]="showYAxisLabel" 
+      [yAxisLabel]="yAxisLabel" 
+      [xAxisLabel]="xAxisLabel"
+      (select)="onSelect($event)">
+    </ngx-charts-bar-vertical>
